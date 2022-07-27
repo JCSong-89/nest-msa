@@ -9,10 +9,4 @@ pipeline {
           }
         }    
    } 
-    post {
-        always {
-            /* clean up workspace */
-            deleteDir();
-        }
-    }
 }
