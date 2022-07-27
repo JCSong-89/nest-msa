@@ -7,6 +7,7 @@ pipeline {
                 dockerfile {
                 filename 'Dockerfile'  
                }
+         }
         stage('init') {
             steps{
                 sh 'node --version'
