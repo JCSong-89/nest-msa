@@ -6,7 +6,6 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y apt-utils
-
 # 로케일 설정
 RUN apt-get install locales -y
 RUN localedef -f UTF-8 -i ko_KR ko_KR.UTF-8
