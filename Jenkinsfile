@@ -2,10 +2,6 @@ pipeline {
     agent any
     stages{
         stage('setup') {
-            agent {
-                docker
-            }
-            
             steps {
                 sh 'apt-get update'
                 sh 'apt-get -y install apt-transport-https ca-certificates curl gnupg2 software-properties-common'
