@@ -3,12 +3,13 @@ pipeline {
          dockerfile true
     }
     stages{
-         agent {
+        stage('init') {
+            agent {
                 dockerfile {
                 filename 'Dockerfile'  
                }
-         }
-        stage('init') {
+            }
+            
             steps{
                 sh 'node --version'
           }
