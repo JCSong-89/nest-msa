@@ -11,9 +11,9 @@ pipeline {
                  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
                  apt-get update
                  apt-get -y install docker-ce
-                 docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock my-container'''
+                 docker run -d -v /var/run/docker.sock:/var/run/docker.sock my-container'''
             }
-        }
+        }ß
 
         stage('init') {
             agent {
