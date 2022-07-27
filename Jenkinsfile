@@ -1,9 +1,8 @@
 pipeline { 
     agent {
-         dockerfile true
+         any
     }
     stages{
-
         stage('setup') {
             agent{
                 docker
